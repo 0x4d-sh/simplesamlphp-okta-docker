@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  idp:
+    build:
+      context: .
+      args:
+        SIMPLESAMLPHP_VERSION: "1.19.1"
+    ports:
+      - "8081:8080"
