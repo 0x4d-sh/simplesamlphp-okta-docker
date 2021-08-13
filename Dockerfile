@@ -16,8 +16,8 @@ RUN curl -sSL -o /tmp/simplesamlphp.tar.gz https://github.com/simplesamlphp/simp
 COPY config/simplesamlphp/config.php /var/www/simplesamlphp/config
 COPY config/simplesamlphp/authsources.php /var/www/simplesamlphp/config
 COPY config/simplesamlphp/saml20-idp-remote.php /var/www/simplesamlphp/metadata
-COPY config/simplesamlphp/server.crt /var/www/simplesamlphp/cert/
-COPY config/simplesamlphp/server.pem /var/www/simplesamlphp/cert/
+COPY config/simplesamlphp/saml.crt /var/www/simplesamlphp/cert/
+COPY config/simplesamlphp/saml.pem /var/www/simplesamlphp/cert/
 
 # Apache
 ENV HTTP_PORT 8080
