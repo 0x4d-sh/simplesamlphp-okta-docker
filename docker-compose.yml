@@ -1,6 +1,7 @@
 version: '3.7'
 services:
   idp:
+    container_name: okta-sp
     build:
       context: .
       args:
